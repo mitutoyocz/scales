@@ -133,6 +133,8 @@
 					</p>
 					
 					<h2>DRO čítač KA-200</h2>
+					<p><small><i>Vyobrazení čítače je nahoře v hlavičce stránky.</small></i>
+					</p>
 					<p>Ovládací a zobrazovací jednotka DRO systémů je obvykle nazývána jako „čítač“ (display counter). Toto pojmenování vychází z technického a historického principu jednotky, jejíž zásadní úlohou bylo čítat impulzy z inkrementálních pravítek. S příchodem Absolute pravítek a se zvýšením funkcionality a inteligence jednotky již není název čítač zcela výstižný, nicméně v běhu doby se stal vžitým pojmem.
 					</p>
 					<p>Čítač existuje v provedené pro 2D a 3D odměřování (zde na obrázcích pro 2D, souřadnice X a Y).  Může pracovat ve dvou základních režimech:
@@ -153,6 +155,14 @@
                     </ul>
 
 					<h3>Funkční schema čítače včetně modulu pro výstup dat</h3>
+					<p>V základním provedení jdou k čítači připojit až dvě (2-osá varianta) nebo 3 (3-osá varianta) inkrementální nebo ABSOLUTE pravítka. Dále má čítač vstup pro dotykovou sondu, která se obvykle používá při použití inkrementálních pravítek. Sonda je připojena pomocí kruhového DIN konektoru se 4 piny tak, že při kontaktu s obrobkem se uzavře obvod mezi kostrou a povrchem sondy. Zapojení odpovídá spínacímu kontaktu mezi dvěma vývody sondy. Při každém kontaktu sondy dojde též k zaznění zvukového signálu.
+					</p>
+					<p>Čítač je možno doplnit modulem výstupů. Ten dle způsobu montáže poskytuje USB výstup s HID funkcionalitou (klávesnicový výstup) a konektor jack 3,5 mm pro připojení ručního spínače (foot switch) pro spuštění výdeje dat. Alternativně lze výstupní modul namontovat jako obousměrný port RS232 s konektorem D-sub 25. Některé piny nevyužité pro RS232 jsou využity pro externí spouštění výstupu či nulování údajů jednotlivých os. V obou případech je výdej dat spouštěn také pomocí dotykové sondy.
+					</p>
+					<p>Aplikace s výstupem dat přes RS232 a spouštěním výdeje pomocí vstupů dotykové sondy byla použita např. v <a href="droapp-olympus.html">jednoúčelovém přípravku firmy Olympus</a>.
+					</p>
+					<br />
+
 					<p style="text-align:center">
 						<img src="images/KA-200 schema.png" alt="">
 					</p>
