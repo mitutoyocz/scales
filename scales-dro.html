@@ -132,7 +132,7 @@
 						<small><i>Porovnání profilu standardního pravítka AT-715 a pravítka s nejmenším profilem AT-112.</small></i>
 					</p>
 					
-					<h2>DRO čítač KA-200</h2>
+					<h2 id="ka200">DRO čítač KA-200</h2>
 					<p><small><i>Vyobrazení čítače je nahoře v hlavičce stránky.</small></i>
 					</p>
 					<p>Ovládací a zobrazovací jednotka DRO systémů je obvykle nazývána jako „čítač“ (display counter). Toto pojmenování vychází z technického a historického principu jednotky, jejíž zásadní úlohou bylo čítat impulzy z inkrementálních pravítek. S příchodem Absolute pravítek a se zvýšením funkcionality a inteligence jednotky již není název čítač zcela výstižný, nicméně v běhu doby se stal vžitým pojmem.
@@ -167,6 +167,30 @@
 						<img src="images/KA-200 schema.png" alt="">
 					</p>
 					
+					<h3>Základní nastavení</h3>
+					<p>Čítač je dodávám se základním přednastavením s režimem „standardní čítač“, takže pro uvedení do provozu není třeba dělat žádné nastavení. Stačí připojit alespoň jedno pravítko a zapnout.
+					</p>
+					<p>Po montáži do zařízení však zpravidla bývá potřebné provést změnu některých základních parametrů. Změna parametrů se provádí v <strong>režimu nastavení parametrů</strong>, do kterého se čítač dostane <strong>po zapnutí</strong> (na zadním panelu) <strong>při současném držení tlačítka MODE</strong>. Uvedený mód se ohlásí výpisem textu PARA na displeji.
+					</p>
+					<p>Na jednotlivé parametry je možné se přepínat (listovat) tlačítky + či -, vstup do režimu změny parametru se provádí stisknutím ENT. Řada parametrů má nastavení samostatné pro jednotlivé osy, v takovém případě je třeba nejprve tlačítky X, Y, Z vybrat příslušnou osu. Listování dostupnými parametry je možné provádět opět tlačítky + a -, potvrzení výběru je tlačítkem ENT.
+					</p>
+					<p>Režim <strong>nastavení parametrů se ukončuje tlačítkem C</strong>, čítač následně přejde z režimu nastavení parametrů do normálního režimu. Doporučuje se provést následný reset čítače jeho vypnutím a zapnutím.
+					</p>
+					<p>Některé ze základních parametrů:
+					</p>
+					<ul>
+						<li><strong>tyPE</strong> - typ čítače: standard (MILL) / soustruh (LATHE).
+						</li>
+						<li><strong>DIR.</strong>  - směr čítání jednotlivých pravítek: normální (-I) nebo opačný (I-). V souvislosti se způsobem montáže mohou některá pravítka vykazovat opačný směr nárůstu hodnoty, než je požadováno. V takovém případě je třeba pro dané pravítko (X, Y, Z) změnit směr čítání na opačný.
+						</li>
+						<li><strong>DSP.MODE</strong> – umožňuje nastavit pro konkrétní osu (X, Y, Z) zobrazení typu průměr (dIA). Da displeji příslušné osy se pak zobrazuje dvojnásobná změna hodnoty než je změna hodnoty odměřená pravítkem. Odpovídá tedy změně průměru v závislosti na změně poloměru.  Při nastavení DSP.MODE =  dIA svítí u displeje příslušné osy symbol „dia.“. Standardní nastavení tohoto parametru je „rAd“.
+						</li>
+						<li><strong>OFFSET</strong> – konstanty nastavení nulového bodu stroje (pro pravítka AT-715). Jde o hodnoty, které se připočítávají k hodnotě z pravítek (X, Y, Z) <strong>pro souřadnici 0</strong> v okamžiku zapnutí přístroje. Použití je následující: po montáži celého mechanického a odměřovacího systému se nastaví jeho poloha do nulové souřadnice stroje. Poté se zapne čítač a zaznamenají se hodnoty zobrazené pro jednotlivé osy. Uvedené hodnoty s opačným znaménkem se potom zadají jako OFFSET konstanty. Po uložení a po příštím zapnutí čítače se zobrazí již korigované hodnoty a na dané pozici stroje tím pádem souřadnice 0. 
+						</li>
+					</ul>
+					<p>Celkově je možné na čítači (s modulem pro výstup dat) nastavit 36 různých parametrů. Více viz návod k čítači.
+					</p>
+
 		                            
                 </div>
             <!--End Main Content Area-->
