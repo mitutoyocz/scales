@@ -193,6 +193,8 @@
 						<li><strong>DIR.</strong>  - směr čítání jednotlivých pravítek: normální (-I) nebo opačný (I-). V souvislosti se způsobem montáže mohou některá pravítka vykazovat opačný směr nárůstu hodnoty, než je požadováno. V takovém případě je třeba pro dané pravítko (X, Y, Z) změnit směr čítání na opačný.
 						</li>
 						<li><strong>DSP.MODE</strong> – umožňuje nastavit pro konkrétní osu (X, Y, Z) zobrazení typu průměr (dIA). Da displeji příslušné osy se pak zobrazuje dvojnásobná změna hodnoty než je změna hodnoty odměřená pravítkem. Odpovídá tedy změně průměru v závislosti na změně poloměru.  Při nastavení DSP.MODE =  dIA svítí u displeje příslušné osy symbol „dia.“. Standardní nastavení tohoto parametru je „rAd“.
+						<br />
+						Pokud se tedy čítač bude používat jako čítač soustruhu (tyPE = LATHE), měl by být DSP.MODE pro osu X vždy nastaven na dIA (zobrazování průměru).
 						</li>
 						<li><strong>OFFSET</strong> – konstanty nastavení nulového bodu stroje (pro pravítka AT-715). Jde o hodnoty, které se připočítávají k hodnotě z pravítek (X, Y, Z) <strong>pro souřadnici 0</strong> v okamžiku zapnutí přístroje. Použití je následující: po montáži celého mechanického a odměřovacího systému se nastaví jeho poloha do nulové souřadnice stroje. Poté se zapne čítač a zaznamenají se hodnoty zobrazené pro jednotlivé osy. Uvedené hodnoty s opačným znaménkem se potom zadají jako OFFSET konstanty. Po uložení a po příštím zapnutí čítače se zobrazí již korigované hodnoty a na dané pozici stroje tím pádem souřadnice 0. 
 						</li>
